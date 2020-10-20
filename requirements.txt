@@ -1,0 +1,17 @@
+# update which package need to install in prod
+
+Django>=2.2,<3.5
+# Images
+Pillow>=5.5.0,<6.4
+# djangorestframework>=3.9.0,<3.10.0
+django-extensions
+ipython
+pylint
+flake8>=3.6.0,<3.7.0
+# Postgres Configuration
+psycopg2>=2.7.5,<2.8.30
+
+# For prod
+
+# gunicorn>=19,<21
+
