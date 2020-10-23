@@ -6,14 +6,14 @@ version: "3.7"
 services:
   web:
     restart: unless-stopped
-    container_name: todo_app
+    container_name: todo_app_name
     build: 
       context: .
       dockerfile: Dockerfile.dev
 
     networks: 
       test_net:
-        ipv4_address: 172.26.1.1
+        ipv4_address: 172.27.2.1
   
     command:
       sleep infinity
@@ -45,7 +45,7 @@ services:
 
     networks: 
       test_net:
-        ipv4_address: 172.26.1.2
+        ipv4_address: 172.27.2.2
 
     volumes:
       - postgres-data:/var/lib/postgresql/data
@@ -64,8 +64,8 @@ volumes:
 
 networks: 
   test_net:
-    ipam: izzarest
+    ipam:
       driver: default
       config: 
-        - subnet: 172.26.1.0/16
+        - subnet: 172.27.2.0/16
 

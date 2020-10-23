@@ -1,5 +1,5 @@
 {
-	"name": "todo_app",
+	"name": "todo_app_name",
 	//"context": "..",
 	//"dockerFile": "Dockerfile",
 	"dockerComposeFile": "../docker-compose.dev.yml",
